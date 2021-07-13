@@ -28,9 +28,11 @@ class User extends Authenticatable
         'email',
         'password',
         'role_id',
-        'student_address',
-        'student_licence_number',
-        'teacher_qualifications',
+        'address',
+        'cin',
+        'ehealthcare_qualifications',
+        'phone',
+        'bio',
     ];
 
     /**

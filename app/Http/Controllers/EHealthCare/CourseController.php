@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Teachers;
+namespace App\Http\Controllers\EHealthCare;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Gate;
@@ -13,6 +13,6 @@ class CourseController extends Controller
             abort(403);
         }
 
-        return view('teacher.courses.index');
+        return view('EHealthCare.courses.index');
     }
 }

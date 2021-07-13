@@ -23,13 +23,13 @@
                     @endif
 
                     @if (auth()->user()->role_id == 2)
-                        <x-jet-nav-link href="{{ route('student.lessons.index') }}" :active="request()->routeIs('student.lessons.index')">
+                        <x-jet-nav-link href="{{ route('ehealthcare.lessons.index') }}" :active="request()->routeIs('ehealthcare.lessons.index')">
                             {{ __('Lessons') }}
                         </x-jet-nav-link>
                     @endif
 
                     @can('manage-courses')
-                        <x-jet-nav-link href="{{ route('teacher.courses.index') }}" :active="request()->routeIs('teacher.courses.index')">
+                        <x-jet-nav-link href="{{ route('patient.courses.index') }}" :active="request()->routeIs('patient.courses.index')">
                             {{ __('Courses') }}
                         </x-jet-nav-link>
                     @endif

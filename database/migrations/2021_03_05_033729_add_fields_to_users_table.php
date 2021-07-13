@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddRolesFieldsToUsersTable extends Migration
+class AddFieldsToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,10 +14,8 @@ class AddRolesFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('role_id')->constrained();
-            $table->string('address')->nullable();
-            $table->string('cin')->nullable();
-            $table->string('ehealthcare_qualifications')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('bio')->nullable();
         });
     }
 
